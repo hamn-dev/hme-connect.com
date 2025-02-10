@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HME connect - Responsive social media website using HTML, CSS & Javascript</title>
+    <!-- ICONSCOUT CDN -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!-- FONT-AWESOME CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <h1 class="heading">HME connect
+            </h1>
+
+            <div class="search-bar" style="height: 7vh;padding: 0 1rem;">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="search for media" class="main-search">
+            </div>
+            <div class="create">
+                <label class="btn btn-primary" for="create-post">Create</label>
+            </div>
+            <div class="profile-photo" style="width: 4rem;">
+                <img src="./images/HME.jpg">
+            </div>
+        </div>
+    </nav>
+    <!-- ==========main========= -->
+    <main>
+        <div class="container">
+            <div class="left">
+                <!-- ====left side -->
+                <a class="profile">
+                    <div class="profile-photo">
+                        <img src="./images/HME.jpg">
+                    </div>
+                    <div class="handle">
+                        <h4>HME connect</h4>
+                        <p class="text-muted">@HME</p>
+                    </div>
+                </a>
+                <!-- ======side-bar===== -->
+                <div class="sidebar">
+                    <a class="menu-item active">
+                        <span><i class="fa-solid fa-house"></i></span>
+                        <h3>Home</h3>
+                    </a>
+                    <a class="menu-item ">
+                        <span><i class="fa-brands fa-wpexplorer"></i></span>
+                        <h3>Explore</h3>
+                    </a>
+                    <a class="menu-item " id="notifications">
+                        <span><i class="fa-solid fa-bell"><small class="notification-count">9+</small></i></span>
+                        <h3>Notification</h3>
+                        <div class="notification-popup">
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./images/post1.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>hamna </b> accepted your friend request
+                                    <small class="text-muted">2 Days Ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./images/post2.jpeg">
+                                </div>
+                                <div class="notification-body">
+                                    <b> masooma </b> commented on your post
+                                    <small class="text-muted">1 Hour Ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./images/post3.jpeg">
+                                </div>
+                                <div class="notification-body">
+                                    <b> eesha </b> and <b>283 others</b> liked your post
+                                    <small class="text-muted">4 minutes Ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./images/post4.jpeg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>rosa </b> commented on a post you are tagged in
+                                    <small class="text-muted">2 days Ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./images/post5.jpeg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>twinkle </b> commented on a post you are tagged in
+                                    <small class="text-muted">1 Hour Ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./images/post6.jpeg">
+                                </div>
+                                <div class="notification-body">
+                                    <b> mansoor </b> commented on your post
+                                    <small class="text-muted">1 Hour Ago</small>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- =====notification End -->
+                    </a>
+                    <a class="menu-item " id="messages-notification">
+                        <span><i class="fa-solid fa-envelope"><small class="notification-count">8</small></i></span>
+                        <h3>Messages</h3>
+                    </a>
+                    <a class="menu-item ">
+                        <span><i class="fa-solid fa-bookmark"></i></span>
+                        <h3>Bookmark</h3>
+                    </a>
+                    <a class="menu-item ">
+                        <span><i class="fa-solid fa-chart-line"></i></span>
+                        <h3>Analytics</h3>
+                    </a>
+                    <a class="menu-item " id="theme">
+                        <span><i class="fa-solid fa-palette"></i></span>
+                        <h3>Theme</h3>
+                    </a>
+                    <a class="menu-item ">
+                        <span><i class="fa-solid fa-gear"></i></span>
+                        <h3>Settings</h3>
+                    </a>
+                </div>
+                <!-- ====end of sidebar=== -->
+                <label for="create-post" class="btn btn-primary">Create post</label>
+            </div>
+            <!-- ---------------------End of left------------------------------------ -->
+            <!-- Middle -->
+            <div class="middle">
+                <div class="stories">
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="./images/HME.jpg">
+                        </div>
+                        <p class="name">Your story</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="./images/logo2.png">
+                        </div>
+                        <p class="name">Bonanza</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="./images/story3.png">
+                        </div>
+                        <p class="name">netflix</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="./images/logo4.png">
+                        </div>
+                        <p class="name">news</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="./images/logo5.png">
+                        </div>
+                        <p class="name">Technology</p>
+                    </div>
+                </div>
+                <!-- ------------------------------End of stories -->
+                <form class="create-post">
+                    <div class="profile-photo">
+                        <img src="./images/HME.jpg">
+                    </div>
+                    <input type="text" placeholder="what's on your mind?" id="create-post">
+                    <input type="submit" value="post" class="btn btn-primary">
+                </form>
+                <!-- ---------------------FEEDS----------- -->
+                <div class="feeds">
+                    <!-- ---------------------FEED 1----------- -->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user user-adjust">
+                                <div class="profile-photo">
+                                    <img src="./images/logo2.png">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Bonanzasatrangi</h3>
+                                    <small>
+                                        Pakistan , 15 minutes ago
+                                    </small>
+                                </div>
+
+                            </div>
+                            <span class="edit">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </span>
+                        </div>
+                        <div class="photo"><img src="./images/perfume3.jpg" width="500">
+                        </div>
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span id="like"><i class="fa-regular fa-heart"></i></span>&nbsp;&nbsp;&nbsp;
+                                <span><i class="fa-regular fa-comment-dots"></i></span>&nbsp;&nbsp;&nbsp;
+                                <span><i class="fa-regular fa-share-from-square"></i></span>
+
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="fa-regular fa-bookmark"></i></span>
+
+                            </div>
+
+                        </div>
+                        <div class="liked-by">
+                            <span> <img src="./images/img1.jpg" width="500"></span>
+                            <span>
+                                <img src="./images/img1.jpg" width="500"></span>
+                            <span><img src="./images/img1.jpg" width="500"></span>
+                            <p>Liked by <b>pookie</b> and <b>2,323 others</b>
+                            </p>
+                        </div>
+                        <div class="caption">
+                            <p> <b>Bonanzaoffical </b> Wear your confidence like a crown.Discover the fragrance made for
+                                kings.Shop now! <span class="harsh-tag"> # Bonanza</span></p>
+                        </div>
+                        <div class=" comments text-muted">viwed all 277 comments</div>
+                    </div>
+                    <!-- ------end of feed------- -->
+                    <!-- ---------------------FEED 2----------- -->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user user-adjust">
+                                <div class="profile-photo">
+                                    <img src="./images/story3.png">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Netflix</h3>
+                                    <small>
+                                        Pakistan , 15 minutes ago
+                                    </small>
+                                </div>
+
+                            </div>
+                            <span class="edit">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </span>
+                        </div>
+                        <div class="photo"><img src="./images/squid.jpg" width="500">
+                        </div>
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span id="like"><i class="fa-regular fa-heart"></i></span>&nbsp;&nbsp;&nbsp;
+                                <span><i class="fa-regular fa-comment-dots"></i></span>&nbsp;&nbsp;&nbsp;
+                                <span><i class="fa-regular fa-share-from-square"></i></span>
+
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="fa-regular fa-bookmark"></i></span>
+
+                            </div>
+
+                        </div>
+                        <div class="liked-by">
+                            <span> <img src="./images/img1.jpg" width="500"></span>
+                            <span>
+                                <img src="./images/img1.jpg" width="500"></span>
+                            <span><img src="./images/img1.jpg" width="500"></span>
+                            <p>Liked by <b>papa ki pari</b> and <b>2,323 others</b>
+                            </p>
+                        </div>
+                        <div class="caption">
+                            <p> <b>Netflix</b>Squid game:SEASON 2 is now playing <span class="harsh-tag"> #
+                                    netflix</span></p>
+                        </div>
+                        <div class=" comments text-muted">viwed all 277 comments</div>
+                    </div>
+                    <!-- ------end of feed------- -->
+                    <!-- ---------------------FEED 3----------- -->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user user-adjust">
+                                <div class="profile-photo">
+                                    <img src="./images/logo4.png">
+                                </div>
+                                <div class="ingo">
+                                    <h3>News</h3>
+                                    <small>
+                                        Pakistan , 15 minutes ago
+                                    </small>
+                                </div>
+
+                            </div>
+                            <span class="edit">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </span>
+                        </div>
+                        <div class="photo"><img src="./images/news.jpeg" width="500">
+                        </div>
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span id="like"><i class="fa-regular fa-heart"></i></span>&nbsp;&nbsp;&nbsp;
+                                <span><i class="fa-regular fa-comment-dots"></i></span>&nbsp;&nbsp;&nbsp;
+                                <span><i class="fa-regular fa-share-from-square"></i></span>
+
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="fa-regular fa-bookmark"></i></span>
+
+                            </div>
+
+                        </div>
+                        <div class="liked-by">
+                            <span> <img src="./images/img1.jpg" width="500"></span>
+                            <span>
+                                <img src="./images/img1.jpg" width="500"></span>
+                            <span><img src="./images/img1.jpg" width="500"></span>
+                            <p>Liked by <b>sheenparak</b> and <b>2,323 others</b>
+                            </p>
+                        </div>
+                        <div class="caption">
+                            <p> <b>News </b>Electricity prices increased 14 times within 12 month:pakistan<span
+                                    class="harsh-tag"> # News</span></p>
+                        </div>
+                        <div class=" comments text-muted">viwed all 277 comments</div>
+                    </div>
+                    <!-- ------end of feed------- -->
+                    <!-- ---------------------FEED 4----------- -->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user user-adjust">
+                                <div class="profile-photo">
+                                    <img src="./images/logo5.png">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Technology</h3>
+                                    <small>
+                                        Pakistan , 15 minutes ago
+                                    </small>
+                                </div>
+
+                            </div>
+                            <span class="edit">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </span>
+                        </div>
+                        <div class="photo"><img src="./images/microsoft.jpg" width="500">
+                        </div>
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span id="like"><i class="fa-regular fa-heart"></i></span>&nbsp;&nbsp;&nbsp;
+                                <span><i class="fa-regular fa-comment-dots"></i></span>&nbsp;&nbsp;&nbsp;
+                                <span><i class="fa-regular fa-share-from-square"></i></span>
+
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="fa-regular fa-bookmark"></i></span>
+
+                            </div>
+
+                        </div>
+                        <div class="liked-by">
+                            <span> <img src="./images/img1.jpg" width="500"></span>
+                            <span>
+                                <img src="./images/img1.jpg" width="500"></span>
+                            <span><img src="./images/img1.jpg" width="500"></span>
+                            <p>Liked by <b>papa ki pari</b> and <b>2,323 others</b>
+                            </p>
+                        </div>
+                        <div class="caption">
+                            <p> <b>Technology</b>microsoft is offering a free python course where you can learn an AL
+                                chatbot and earn a certification perfect for beginner to boost their skills.Apply now
+                                through link in bio. <span class="harsh-tag"> # microsoft</span></p>
+                        </div>
+                        <div class=" comments text-muted">viwed all 277 comments</div>
+                    </div>
+                    <!-- ------end of feed------- -->
+                    <!-- ---------------------FEED 5----------- -->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user user-adjust">
+                                <div class="profile-photo">
+                                    <img src="./images/logo sticker.png">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Stickerz-company</h3>
+                                    <small>
+                                        Pakistan , 15 minutes ago
+                                    </small>
+                                </div>
+
+                            </div>
+                            <span class="edit">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </span>
+                        </div>
+                        <div class="photo"><img src="./images/sticker.webp" width="500">
+                        </div>
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span id="like"><i class="fa-regular fa-heart"></i></span>&nbsp;&nbsp;&nbsp;
+                                <span><i class="fa-regular fa-comment-dots"></i></span>&nbsp;&nbsp;&nbsp;
+                                <span><i class="fa-regular fa-share-from-square"></i></span>
+
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="fa-regular fa-bookmark"></i></span>
+
+                            </div>
+
+                        </div>
+                        <div class="liked-by">
+                            <span> <img src="./images/img1.jpg" width="500"></span>
+                            <span>
+                                <img src="./images/img1.jpg" width="500"></span>
+                            <span><img src="./images/img1.jpg" width="500"></span>
+                            <p>Liked by <b>pookie</b> and <b>2,323 others</b>
+                            </p>
+                        </div>
+                        <div class="caption">
+                            <p> <b>Stickerz-company</b>laptop sticker are always available,DM for order <span
+                                    class="harsh-tag"> # stickerz</span></p>
+                        </div>
+                        <div class=" comments text-muted">viwed all 277 comments</div>
+                    </div>
+                    <!-- ------end of feed------- -->
+                    <!-- ---------------------FEED 6----------- -->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user user-adjust">
+                                <div class="profile-photo">
+                                    <img src="./images/logo coffee.png">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Tim Horton</h3>
+                                    <small>
+                                        Pakistan , 15 minutes ago
+                                    </small>
+                                </div>
+
+                            </div>
+                            <span class="edit">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </span>
+                        </div>
+                        <div class="photo"><img src="./images/tim.webp" width="500">
+                        </div>
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span id="like"><i class="fa-regular fa-heart"></i></span>&nbsp;&nbsp;&nbsp;
+                                <span><i class="fa-regular fa-comment-dots"></i></span>&nbsp;&nbsp;&nbsp;
+                                <span><i class="fa-regular fa-share-from-square"></i></span>
+
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="fa-regular fa-bookmark"></i></span>
+
+                            </div>
+
+                        </div>
+                        <div class="liked-by">
+                            <span> <img src="./images/img1.jpg" width="500"></span>
+                            <span>
+                                <img src="./images/img1.jpg" width="500"></span>
+                            <span><img src="./images/img1.jpg" width="500"></span>
+                            <p>Liked by <b>sheenparak</b> and <b>2,323 others</b>
+                            </p>
+                        </div>
+                        <div class="caption">
+                            <p> <b>TimHortonpk</b>Did you get your daily dose of coffee yet?grab the perfect cup of
+                                chilled goodness at your nearest tim outlets <span class="harsh-tag"> # Tim</span></p>
+                        </div>
+                        <div class=" comments text-muted">viwed all 277 comments</div>
+                    </div>
+                    <!-- ------end of feed------- -->
+                    <!-- ---------------------FEED 7----------- -->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user user-adjust">
+                                <div class="profile-photo">
+                                    <img src="./images/outlogo.png" style="width: 100%;height: 100%;n">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Ethnicofficial</h3>
+                                    <small>
+                                        Pakistan , sponsored
+                                    </small>
+                                </div>
+
+                            </div>
+                            <span class="edit">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </span>
+                        </div>
+                        <div class="photo"><img src="./images/sale.jpg" width="500">
+                        </div>
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span id="like"><i class="fa-regular fa-heart"></i></span>&nbsp;&nbsp;&nbsp;
+                                <span><i class="fa-regular fa-comment-dots"></i></span>&nbsp;&nbsp;&nbsp;
+                                <span><i class="fa-regular fa-share-from-square"></i></span>
+
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="fa-regular fa-bookmark"></i></span>
+
+                            </div>
+
+                        </div>
+                        <div class="liked-by">
+                            <span> <img src="./images/img1.jpg" width="500"></span>
+                            <span>
+                                <img src="./images/img1.jpg" width="500"></span>
+                            <span><img src="./images/img1.jpg" width="500"></span>
+                            <p>Liked by <b>pookie</b> and <b>2,323 others</b>
+                            </p>
+                        </div>
+                        <div class="caption">
+                            <p> <b>Ethnicofficial</b>Up to 50% OFF on entire western collection. Grap your favorites
+                                before they're gone! <span class="harsh-tag"> # Ethnicofficial</span></p>
+                        </div>
+                        <div class=" comments text-muted">viwed all 277 comments</div>
+                        <!-- ------end of feed------- -->
+                    </div>
+                    <!-- ------end of feeds------- -->
+                </div>
+                <!-- ------end of middle------- -->
+            </div>
+            <!-- right -->
+            <div class="right">
+                <div class="messages">
+                    <div class="heading">
+                        <h4>Messages</h4><i class="fa-solid fa-pen-to-square"></i>
+                    </div>
+                    <!-- -------search bar------- -->
+                    <div class="search-bar">
+                        <i class="fa-solid fa-magnifying-glass" style="margin-left: 1rem;"></i>
+                        <input type="search" placeholder="search messages" id="message-search">
+                    </div>
+                    <!-- ------messages category------ -->
+                    <div class="category">
+                        <h6 class="active">Primary</h6>
+                        <h6>General</h6>
+                        <h6 class="message-requests">Request(7)</h6>
+                    </div>
+                    <!-- ------Message------ -->
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="./images/pookie.jpg">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5 class="pookie">Pookie 🎀</h5>
+                            <p class="text-bold sms">just woke up bruh</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="./images/papa ki pari.jpg">
+                            <!-- <div class="active"></div> -->
+                        </div>
+                        <div class="message-body">
+
+                            <h5 class="pookie">Papa ki pari 👰🏻‍♀</h5>
+                            <p class="text-bold">wts up guyzz</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="./images/sheenparak.jpg">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5 class="pookie">sheenparak 😻</h5>
+                            <p class="text-bold">lol u r right</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="./images/rose.jpg">
+                            <!-- <div class="active"></div> -->
+                        </div>
+                        <div class="message-body">
+                            <h5 class="pookie">Rose 🌹</h5>
+                            <p class="text-bold">ja mara</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="./images/chocolate.jpg">
+                            <!-- <div class="active"></div> -->
+                        </div>
+                        <div class="message-body">
+                            <h5 class="pookie">Chocolate 🍫</h5>
+                            <p class="text-bold">class ao jldi</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="./images/unicon.jpg">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5 class="pookie">Unicon 🦄</h5>
+                            <p class="text-bold sms">just woke up bruh</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="./images/pikachu.jpg">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5 class="pookie">Pikachu 😇</h5>
+                            <p class="text-bold sms">just woke up bruh</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="./images/Pesho.jpg">
+                            <!-- <div class="active"></div> -->
+                        </div>
+                        <div class="message-body">
+                            <h5 class="pookie">Pesho 😺</h5>
+                            <p class="text-bold sms">just woke up bruh</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="./images/Maya.jpg">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5 class="pookie">Maya 👩🏻</h5>
+                            <p class="text-bold sms">just woke up bruh</p>
+                        </div>
+                    </div>
+                    <div id="no-result">No result Found</div>
+                </div>
+                <!-- -------end of messages------ -->
+
+
+
+
+                <!-- -------friends requests------ -->
+
+                <div class="friend-requests">
+                    <h4>Requests</h4>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="./images/pexels-tome-louro-273270-1666779.jpg">
+                            </div>
+                        </div>
+                        <h5 id="h5">Farhan</h5>
+                        <p class="text-muted" id="friend">
+                            3 mutaul friends
+                        </p>
+                        <div class="action">
+                            <button class="btn btn-primary">
+                                Accept
+                            </button>
+                            <button class="btn btn-danger">
+                                Decline
+                            </button>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="./images/pexels-freestockpro-1172207.jpg">
+                            </div>
+                        </div>
+                        <h5 id="h5">Ali</h5>
+                        <p class="text-muted" id="friend">
+                            3 mutaul friends
+                        </p>
+                        <div class="action">
+                            <button class="btn btn-primary">
+                                Accept
+                            </button>
+                            <button class="btn btn-danger">
+                                Decline
+                            </button>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="./images/pexels-chloekalaartist-1043474.jpg">
+                            </div>
+                        </div>
+                        <h5 id="h5">Aon</h5>
+                        <p class="text-muted" id="friend">
+                            3 mutaul friends
+                        </p>
+                        <div class="action">
+                            <button class="btn btn-primary">
+                                Accept
+                            </button>
+                            <button class="btn btn-danger">
+                                Decline
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- =========end of right=========== -->
+        </div>
+    </main>
+
+    <!-- ===================theme customization=============== -->
+
+    <div class="customize-theme">
+        <div class="card">
+            <h2> Your View</h2>
+            <p class="text-muted">Manage your font size , color and background</p>
+            <!-- ----------font size---------- -->
+            <div class="font-size">
+                <h4>Font-size</h4>
+                <div>
+                    <h6>Aa</h6>
+                    <div class="choose-size">
+                        <span class="font-size-1"></span>
+                        <span class="font-size-2 active"></span>
+                        <span class="font-size-3"></span>
+                        <span class="font-size-4"></span>
+                        <span class="font-size-5"></span>
+                    </div>
+                    <h3>Aa</h3>
+                </div>
+            </div>
+            <!-- ----------primary colors-------- -->
+            <div class="color">
+                <h4>Color</h4>
+                <div class="choose-color">
+                    <span class="color-1 active"></span>
+                    <span class="color-2"></span>
+                    <span class="color-3"></span>
+                    <span class="color-4"></span>
+                    <span class="color-5"></span>
+                </div>
+            </div>
+            <!-- ---------background colors-------- -->
+            <div class="background">
+                <h4>Bachground</h4>
+                <div class="choose-bg">
+                    <div class="bg-1 active">
+                        <span></span>
+                        <h5 for="bg-1">Light</h5>
+                    </div>
+                    <div class="bg-2">
+                        <span></span>
+                        <h5>Dim</h5>
+                    </div>
+                    <div class="bg-3">
+                        <span></span>
+                        <h5 for="bg-3">Lights out</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
